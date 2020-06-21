@@ -5,46 +5,113 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity2_RS_2"
-    android:background="@drawable/ty">
+    android:background="@drawable/lucky"
+    >
+
+
+    <Button
+        android:id="@+id/btn_RM1"
+        android:layout_width="209dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="111dp"
+        android:layout_marginTop="608dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="121dp"
+        android:layout_marginBottom="75dp"
+        android:text="Return to Main Page" />
+
+    <TextView
+        android:layout_width="330dp"
+        android:layout_height="330dp"
+
+        android:layout_alignParentStart="true"
+        android:background="#99141414"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginLeft="42dp"
+        android:layout_marginTop="158dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginRight="39dp"
+        android:layout_marginBottom="242dp" />
+
+    <TextView
+        android:id="@+id/tv3"
+        android:layout_width="330dp"
+        android:layout_height="100dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="386dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginBottom="245dp"
+        android:text="Value"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/tv4"
+        android:layout_width="330dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="270dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:text="Value"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"></TextView>
+
+    <TextView
+        android:id="@+id/tv2"
+        android:layout_width="330dp"
+        android:layout_height="110dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="158dp"
+        android:text="Value"
+        android:textColor="@android:color/white"
+        android:textSize="20sp"></TextView>
 
     <TextView
         android:id="@+id/tv1"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_width="86dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="130dp"
-        android:layout_marginTop="150dp"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="174dp"
+        android:layout_marginLeft="174dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="151dp"
+        android:layout_marginRight="151dp"
+        android:layout_marginBottom="643dp"
         android:text="Value"
         android:textColor="@android:color/holo_purple"
-        android:textSize="30sp"></TextView>
-    <TextView
-        android:id="@+id/tv2"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="250dp"
-        android:text="Value"
-        android:textColor="@android:color/holo_purple"
-        android:textSize="30sp"></TextView>
-    <TextView
-        android:id="@+id/tv3"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="350dp"
-        android:text="Value"
-        android:textColor="@android:color/holo_purple"
-        android:textSize="30sp"></TextView>
-    <TextView
-        android:id="@+id/tv4"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentTop="true"
-        android:layout_marginLeft="30dp"
-        android:layout_marginTop="450dp"
-        android:text="Value"
-        android:textColor="@android:color/holo_purple"
-        android:textSize="30sp"></TextView>
+        android:textSize="20sp"></TextView>
+
+
 </RelativeLayout>
