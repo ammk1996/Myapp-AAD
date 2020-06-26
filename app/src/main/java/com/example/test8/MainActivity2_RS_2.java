@@ -29,11 +29,12 @@ public class MainActivity2_RS_2 extends AppCompatActivity {
         st4=getIntent().getExtras().getString("DOR");
 
         tv2.setText("Hello " + st1 + ", you've sent table reservation for "+st2+" customer(s) on the date of " + st4 + ".");
-        tv3.setText("Your phone number is "+ st3 + " ");
-        tv4.setText("Once confirmed, you will receive confirmation call from us.");
+        tv4.setText("Your phone number is "+ st3 + " ");
+        tv3.setText("Once confirmed, you will receive confirmation call from us.");
         btn_RM1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                openMP();
 
             }
         });
@@ -44,5 +45,6 @@ public class MainActivity2_RS_2 extends AppCompatActivity {
     }
     private void openMP(){
         Intent intent = new Intent(this,MainActivity.class);
+        startActivity(intent);
     }
 }

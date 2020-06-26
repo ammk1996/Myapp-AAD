@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
-    private Button button1, button2, button3;
+    private Button button1, button2, button3,button4;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,6 +17,7 @@ public class MainActivity extends AppCompatActivity {
         button1 = (Button)findViewById(R.id.btn_RS);
         button2 = (Button)findViewById(R.id.btn_VM);
         button3 = (Button)findViewById(R.id.btn_O);
+        button4 = (Button)findViewById(R.id.btn_UM);
         button1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -38,6 +39,12 @@ public class MainActivity extends AppCompatActivity {
 
             }
         });
+        button4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                openUM();
+            }
+        });
     }
     public void openRS(){
         Intent intent1 = new Intent(this,MainActivity2_RS.class);
@@ -50,5 +57,9 @@ public class MainActivity extends AppCompatActivity {
     public void openO(){
         Intent intent3 = new Intent(this,MainActivity2_O.class);
         startActivity(intent3);
+    }
+    public void openUM(){
+        Intent intent4 = new Intent(this,MainActivity2_UM.class);
+        startActivity(intent4);
     }
 }

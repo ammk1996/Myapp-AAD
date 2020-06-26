@@ -9,7 +9,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity2_O_2"></activity>
+        <activity android:name=".MainActivity2_UM_2"></activity>
+        <activity android:name=".MainActivity2_UM" />
+        <activity android:name=".MainActivity2_O_2" />
         <activity android:name=".MainActivity2_RS_2" />
         <activity android:name=".MainActivity2_VM2" />
         <activity android:name=".MainActivity2_O" />

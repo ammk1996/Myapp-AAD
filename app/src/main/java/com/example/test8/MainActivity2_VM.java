@@ -18,9 +18,9 @@ import com.google.firebase.database.ValueEventListener;
 import org.w3c.dom.Text;
 
 public class MainActivity2_VM extends AppCompatActivity {
-    private TextView itemname1,price1,itemname2,price2;
+    private TextView tv1,tv2,tv3,tv4;
     private Button btnRM;
-    DatabaseReference reff;
+    DatabaseReference refvm;
 
 
 
@@ -28,25 +28,27 @@ public class MainActivity2_VM extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main_activity2__v_m);
-        TextView itemname1=(TextView)findViewById(R.id.itemname1);
-        TextView itemname2=(TextView)findViewById(R.id.itemname2);
-        TextView price1=(TextView)findViewById(R.id.price1);
-        TextView price2=(TextView)findViewById(R.id.price2);
+        tv1 = (TextView)findViewById(R.id.tv1);
+        tv2 = (TextView)findViewById(R.id.tv2);
+        tv3 = (TextView)findViewById(R.id.tv3);
+        tv4 = (TextView)findViewById(R.id.tv4);
         btnRM=(Button)findViewById(R.id.btnRM);
         btnRM.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                reff= FirebaseDatabase.getInstance().getReference().child("Table").child("1");
-                reff.addValueEventListener(new ValueEventListener() {
+
+                refvm= FirebaseDatabase.getInstance().getReference().child("Update Menu List").child("2");
+                refvm.addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
-                        String itemname1=dataSnapshot.child("itemname1").getValue().toString();
-                        String price1 = dataSnapshot.child("price1").getValue().toString();
-                        String itemname2=dataSnapshot.child("itemname2").getValue().toString();
-                        String price2= dataSnapshot.child("price2").getValue().toString();
-
-
-
+                        String itemname1=dataSnapshot.child("item1").getValue().toString();
+                        String itemname2 = dataSnapshot.child("item2").getValue().toString();
+                        String itemname3=dataSnapshot.child("item3").getValue().toString();
+                        String itemname4= dataSnapshot.child("item4").getValue().toString();
+                        tv1.setText(itemname1);
+                        tv2.setText(itemname2);
+                        tv3.setText(itemname3);
+                        tv4.setText(itemname4);
                     }
 
                     @Override
